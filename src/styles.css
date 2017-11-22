@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+ .example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+  
+  .mat-header-cell.mat-sort-header-sorted {
+    color: black;
+  }
+   
+  .badge:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .badge-error {
+    background-color: #b94a48;
+  }
+  .badge-error:hover {
+    background-color: #953b39;
+  }
+  .badge-warning {
+    background-color: #f89406;
+  }
+  .badge-warning:hover {
+    background-color: #c67605;
+  }
+  .badge-success {
+    background-color: #468847;
+  }
+  .badge-success:hover {
+    background-color: #356635;
+  }
+  .badge-info {
+    background-color: #3a87ad;
+  }
+  .badge-info:hover {
+    background-color: #2d6987;
+  }
+  .badge-inverse {
+    background-color: #333333;
+  }
+  .badge-inverse:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .table .thead-dark th {
+    background-color:rgb(240, 238, 238);
+    border:solid 0px white;
+  }
+  .alcntr {
+    text-align: center;
+    margin:10px;
+  }
