@@ -14,7 +14,8 @@ import { FOOD } from './mocks-data';
 })
 export class SortComponent implements OnInit {
  food = FOOD;
-  sortedData;
+ status = 'Best';
+ sortedData;
 
   constructor() {
     this.sortedData = this.food.slice();

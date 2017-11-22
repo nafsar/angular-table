@@ -9,7 +9,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 
 import {
-  // CdkTableModule,
   MatAutocompleteModule,
   MatButtonModule,
   MatButtonToggleModule,
@@ -21,11 +20,9 @@ import {
   MatDialogModule,
   MatExpansionModule,
   MatGridListModule,
-  // MatIconModule,
   MatInputModule,
   MatListModule,
   MatMenuModule,
-  // MatNativeDateModule,
   MatPaginatorModule,
   MatProgressBarModule,
   MatProgressSpinnerModule,
@@ -36,12 +33,8 @@ import {
   MatSliderModule,
   MatSlideToggleModule,
   MatSnackBarModule,
-  // MatSortModule,
-  // MatTableModule,
-  MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  // MatStepperModule
 } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { CdkTableModule } from '@angular/cdk/table';
@@ -55,7 +48,6 @@ import { SortComponent } from './sort/sort.component';
   exports: [
     MatSortModule,
     MatTableModule,
-    MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
     CdkTableModule,
@@ -73,6 +65,7 @@ import { SortComponent } from './sort/sort.component';
     MatSortModule, MatTableModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [SortComponent]
 })
 export class AppModule { }

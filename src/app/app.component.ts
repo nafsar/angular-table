@@ -11,7 +11,7 @@ import { MatTableDataSource, MatSort, Sort } from '@angular/material';
   styleUrls: ['app.component.css'],
 })
 export class AppComponent {
-  title = 'Material (sort API)';
+  title = 'Angular Material sort API';
 }
 
 function compare(a, b, isAsc) {

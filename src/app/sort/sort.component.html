@@ -1,23 +1,25 @@
 <div class="container">
-<table matSort (matSortChange)="sortData($event)" class="table table-hover">
+  <table matSort (matSortChange)="sortData($event)" class="table table-hover">
     <thead class="thead-dark">
-    <tr>
-      <th mat-sort-header="name" class="text-primary">Dessert (g)</th>
-      <th mat-sort-header="calories" class="text-primary">Calories (g)</th>
-      <th mat-sort-header="fat" class="text-primary">Fat (g)</th>
-      <th mat-sort-header="carbs" class="text-primary">Carbs (g)</th>
-      <th mat-sort-header="protein" class="text-primary">Protein (g)</th>
+      <tr>
+        <th mat-sort-header="name" class="text-primary">Meal (g)</th>
+        <th mat-sort-header="calories" class="text-primary">Calories (g)</th>
+        <th mat-sort-header="fat" class="text-primary">Fat (g)</th>
+        <th mat-sort-header="carbs" class="text-primary">Carbs (g)</th>
+        <th mat-sort-header="protein" class="text-primary">Protein (g)</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let food of sortedData">
+
+      <td data-toggle="tooltip" data-placement="top" title="Vitamin E">{{food.name}}
+        <span *ngIf="food.name == 'Almond'" class="badge badge-success">{{status}}</span>
+      </td>
+      <td>{{food.calories}}</td>
+      <td>{{food.fat}}</td>
+      <td>{{food.carbs}}</td>
+      <td>{{food.protein}}</td>
     </tr>
-  </thead>
-    <tr *ngFor="let dessert of sortedData">
-      
-      <td data-toggle="tooltip" data-placement="top" title="Vitamin E">{{dessert.name}} <span *ngIf="dessert.name == 'Almond'" class="badge badge-success" >Best</span></td>
-      <td>{{dessert.calories}}</td>
-      <td>{{dessert.fat}}</td>
-      <td>{{dessert.carbs}}</td>
-      <td>{{dessert.protein}}</td>
-    </tr>
- 
-    
+
+
   </table>
 </div>
