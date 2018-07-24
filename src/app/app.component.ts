@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 
 import { MatTableDataSource, MatSort, Sort } from '@angular/material';
 
@@ -12,6 +12,7 @@ import { MatTableDataSource, MatSort, Sort } from '@angular/material';
 })
 export class AppComponent {
   title = 'Angular Material sort API';
+  version: string = VERSION.full;
 }
 
 function compare(a, b, isAsc) {
