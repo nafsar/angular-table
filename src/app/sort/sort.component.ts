@@ -14,7 +14,7 @@ import { FOOD } from './mocks-data';
 })
 export class SortComponent implements OnInit {
  food = FOOD;
- status = 'Best';
+ status = {best: 'Best', good: 'Good'};
  sortedData;
 
   constructor() {

@@ -12,7 +12,8 @@
     <tr *ngFor="let food of sortedData">
 
       <td data-toggle="tooltip" data-placement="top" title="Vitamin E">{{food.name}}
-        <span *ngIf="food.carbs < 2 " class="badge badge-success">{{status}}</span>
+        <span *ngIf="food.calories == 1; elseBlock" class="badge badge-success">{{status.best}}</span>
+        <span #elseBlock *ngIf="food.calories <= 40 && food.calories >= 4" class="badge badge-success">{{status.good}}</span>
       </td>
       <td>{{food.calories}}</td>
       <td>{{food.fat}}</td>
