@@ -14,7 +14,3 @@ export class AppComponent {
   title = 'Angular Material sort API';
   version: string = VERSION.full;
 }
-
-function compare(a, b, isAsc) {
-  return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
-}
